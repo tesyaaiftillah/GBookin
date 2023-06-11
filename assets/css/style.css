@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+.active
+{
+    font-weight: 600;
+}
+
+/* Navigation */
+section.header
+{
+    margin: 10px 0px;
+    padding: 5px 0px;
+}
+section.header ul li
+{
+    margin: 0px 20px;
+}
+section.header ul li.login
+{
+    display: none;
+}
+section.header form input
+{
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+section.header form input:focus
+{
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    section.header ul li.login
+    {
+        display: block;
+    }
+    section.header .phone-hidden 
+    {
+      display: none;
+    }
+}
