@@ -56,6 +56,7 @@ $route['default_controller'] = 'Home';
 $route['Books|books'] = 'Books';
 $route['Wishlist|wishlist'] = 'Wishlist';
 $route['AboutUs|aboutus'] = 'About';
+$route['Cart|cart'] = 'Cart';
 // Auth
 $route['Login|login'] = 'Auth/Login';
 $route['Register|Register'] = 'Auth/Register';

@@ -6,3 +6,35 @@ section.auth .left-side .left-img
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Right Side */
+
+.content-page
+{
+    margin-top: 5em;
+}
+
+form .email input, .password input, .username input
+{
+    margin: 5px 0px;
+    width: 27.5em!important;
+}
+
+.btn-auth .login-btn button
+{
+    background: #222222;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    width: 27.5em;
+    height: 35px;
+}
+
+.btn-auth .google-login a
+{
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 31.5em;
+}

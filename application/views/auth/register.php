@@ -29,41 +29,40 @@
                     <div class="right-side">
                         <div class="container-fluid" style="width: 100vh;">
                             <div class="body-text d-flex flex-column">
-                                <div class="title-page">
-                                    <a href="Home" class="title"><h1>GBookIn</h1></a>
+                                <div class="title-page mt-3 pt-3 ms-5">
+                                    <a href="Home" class="title fw-bold" style="color: black; text-decoration:none;"><h1>Bausastra</h1></a>
                                 </div>
-                                <div class="content-page">
-                                    <form action="" method="post">
-                                        <div class="form-login">
-                                            <div class="username">
-                                                <input type="text" placeholder="Input Username">
-                                            </div>
-                                            <div class="password">
-                                                <input type="password" name="password" id="password" placeholder="Input Password">
-                                            </div>
-                                            <div class="essential d-flex flex-row">
-                                                <div class="remember-input">
-                                                    <input type="checkbox" name="" id="checkbox">
-                                                    <label for="checkbox">Remember Me</label>
+                                <div class="content-page ms-5">
+                                    <div class="container">
+                                        <form action="" method="post">
+                                            <div class="form-login">
+                                                <div class="d-flex flex-column username mb-3">
+                                                    <label for="username">Username</label>
+                                                    <input type="text" id="username">
                                                 </div>
-                                                <div class="btn-forgot">
-                                                    <a href="" class="link">Forgot Password</a>
+                                                <div class="d-flex flex-column email mt-3 mb-3">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" id="email">
+                                                </div>
+                                                <div class="d-flex flex-column password mt-3 mb-3">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" name="password" id="password">
+                                                </div>
+                                                <div class="btn-auth mt-4 pt-4">
+                                                    <div class="login-btn mb-3">
+                                                        <button style="font-size: 16px;">Sign Up</button>
+                                                    </div>
+                                                    <div class="google-login">
+                                                        <a href="#" class="btn btn-sm"><button style="border:none; background:none;font-size: 16px;"><i class="fa-brands fa-google me-3"></i>Google Account</button></a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="btn-auth">
-                                                <div class="login-btn">
-                                                    <button>Sign Up</button>
-                                                </div>
-                                                <div class="google-login">
-                                                    <a href="#" class="btn btn-sm">Google Account</a>
-                                                </div>
-                                            </div>
+                                        </form>
+                                        <div class="footer-page d-flex flex-row" style="margin-top: 4.5em;">
+                                            <p>Have an account ?</p>
+                                            <a href="Login" class="ms-2 fw-bold" style="color:black;text-decoration:none;">Sign In</a>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="footer-page d-flex flex-row">
-                                    <p>Have an account ?</p>
-                                    <a href="Login">Sign In</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

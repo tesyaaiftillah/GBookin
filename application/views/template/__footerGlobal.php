@@ -1,12 +1,12 @@
         <footer class="footer text-light mt-5 pt-4">
             <div class="container">
                 <div class="d-flex flex-row gap-5">
-                    <div class="flex-column">
-                        <div class="widget-1">
+                    <div class="flex-column ">
+                        <div class="widget-1"> 
                             <div class="widget-1-header">
                                 <h5>Bausastra</h5>
                             </div>
-                            <div class="widget-1-content">
+                            <div class="widget-1-content mt-4">
                                 <ul>
                                     <li>
                                         <a href="">Vision</a>
@@ -32,7 +32,7 @@
                             <div class="widget-2-header">
                                 <h5>Navigation</h5>
                             </div>
-                            <div class="widget-2-content">
+                            <div class="widget-2-content mt-4">
                                 <ul>
                                     <li>
                                         <a href="">Home</a>
@@ -55,7 +55,7 @@
                             <div class="widget-3-header">
                                 <h5>Category</h5>
                             </div>
-                            <div class="widget-3-content">
+                            <div class="widget-3-content mt-4 ">
                                 <ul>
                                     <li>
                                         <a href="">Romance</a>
@@ -81,7 +81,7 @@
                             <div class="widget-4-header">
                                 <h5>Social Media</h5>
                             </div>
-                            <div class="widget-4-content">
+                            <div class="widget-4-content mt-4">
                                 <ul>
                                     <li>
                                         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -98,9 +98,9 @@
                     </div>
                     <div class="flex-column">
                         <div class="widget-5-header">
-                            <h4>Search A Book</h4>
+                            <h5>Search A Book</h5>
                         </div>
-                        <div class="widget-5-content">
+                        <div class="widget-5-content mt-4">
                             <input type="text" name="" id="" placeholder="Search Book .....">
                         </div>
                     </div>
@@ -115,9 +115,9 @@
     {
         background: #222222;
     }
-    a
+    footer ul li a
     {
-        color: white;
+        color: rgba(255, 255, 255, 0.386)!important;
         text-decoration: none;
     }
     /* Widget */
@@ -125,7 +125,7 @@
     {
         margin-left: -30px;
     }
-    .widget-1 ul li, .widget-2 ul li, .widget-3 ul li
+    .widget-1 ul li, .widget-2 ul li, .widget-3 ul li, .widget ul li
     {
         list-style: none;
         margin: 10px 0px;

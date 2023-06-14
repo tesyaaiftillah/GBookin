@@ -1,7 +1,7 @@
 <section class="header">
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text"><h2>GBookin</h2></span></a>
+            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text"><h2>Bausastra</h2></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,7 +31,7 @@
                         </form>
                     </li>
                     <li class="nav-item mt-2">
-                        <a class="nav-link" href=""><span class="navbar-text" id="navbar-text"><i class="fa-solid fa-bag-shopping fa-lg"></i></span></a>
+                        <a class="nav-link" href="Cart"><span class="navbar-text" id="navbar-text"><i class="fa-solid fa-bag-shopping fa-lg"></i></span></a>
                     </li>
                     <li class="nav-item mt-2" style="margin: 0px -10px;">
                         <a class="nav-link"><span class="navbar-text" id="navbar-text">|</span></a>

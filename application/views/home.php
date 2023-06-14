@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="d-flex flex-row">
                     <h5 class="fw-bold">Bestseller</h5>
-                    <p class="ms-auto"><a href="" style="color:black;">show All</a></p>
+                    <p class="ms-auto"><a href="" style="color:black;text-decoration:none;">show All</a></p>
                 </div>
                 <div class="d-flex flex-wrap gap-2">
                     <div class="d-flex flex-row m-3">
