@@ -1,7 +1,7 @@
 <section class="header">
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text"><h2>Bausastra</h2></span></a>
+            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text"><h2>GBookIn</h2></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +27,7 @@
                     <li class="nav-item" style="margin: 0px -10px;">
                         <form class="d-flex nav-link" role="search">
                             <span class="navbar-text" id="navbar-text"><i class="fa-solid fa-magnifying-glass fa-lg mt-1"></i></span>
-                            <input class="ms-2 me-2" type="search" placeholder="Search a Book" aria-label="Search">
+                            <input class="ms-2 me-2" type="search" placeholder="Search a Book" aria-label="Search" id="search">
                         </form>
                     </li>
                     <li class="nav-item mt-2">

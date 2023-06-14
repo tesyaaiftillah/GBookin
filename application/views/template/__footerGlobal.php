@@ -4,7 +4,7 @@
                     <div class="flex-column ">
                         <div class="widget-1"> 
                             <div class="widget-1-header">
-                                <h5>Bausastra</h5>
+                                <h5>GBookIn</h5>
                             </div>
                             <div class="widget-1-content mt-4">
                                 <ul>
