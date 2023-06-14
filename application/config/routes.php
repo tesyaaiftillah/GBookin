@@ -53,6 +53,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['default_controller'] = 'Home';
+$route['Books|books'] = 'Books';
+$route['Wishlist|wishlist'] = 'Wishlist';
 $route['AboutUs|aboutus'] = 'About';
 // Auth
 $route['Login|login'] = 'Auth/Login';

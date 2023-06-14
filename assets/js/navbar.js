@@ -9,4 +9,3 @@ window.addEventListener('scroll', function() {
       navbarText.classList.remove('scrolled');
     }
   });
-  

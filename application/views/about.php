@@ -1,6 +1,6 @@
 <!----------------->
     <section class="body">
-        <section class="about-1 mt-5 pt-5">
+        <section class="about-1 mt-5 pt-5 mb-3 pb-3">
             <div class="container">
                 <div class="header-items">
                     <div class="d-flex flex-column">
@@ -51,17 +51,17 @@
                 </div>
             </div>
         </section>
-        <section class="about-2 mt-5 pt-5">
+        <section class="about-2 mt-5 pt-5 mb-3 pb-3">
             <div class="container">
                 <div class="d-flex flex-row align-items-center">
                     <div class="left-side col-7">
                         <div class="d-flex flex-column">
                             <p>The Background of</p>
-                            <h3>GBookIn</h3>
+                            <h3>Bausastra</h3>
                             <p class="mt-3 pt-3 description">
                                 Established in 2022 which year after 2 years cannot do activities outside due to the outbreak that has hit the whole world
                             </p>
-                            <div class="button-right">
+                            <div class="button-left">
                                 <a href="#" class="btn btn-sm">Read More</a>
                             </div>
                         </div>
@@ -82,6 +82,26 @@
                 </div>
             </div>
         </section>
+        <section class="about-3 mt-5 pt-5 mb-3 pb-3">
+            <div class="container">
+                <div class="d-flex flex-row">
+                    <div class="left-side col-lg-6">
+                        <div class="img"></div>
+                    </div>
+                    <div class="right-side col-lg-6">
+                        <div class="flex-column">
+                            <div class="text-description">
+                                <h3 class="fw-bold">You can participate in importing knowledge</h3>
+                                <p>Have a scientific work or book that has not been registered in bausastra ? You can share it here</p>
+                            </div>
+                            <button class="donate-book">
+                                <a href="" class="btn btn-sm">Donating Book</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 <!----------------->
 
@@ -89,6 +109,18 @@
     .divider
     {
         width: 30em;
+    }
+    /* Section */
+    .about-3 .img
+    {
+        height: 20em;
+        width: 30em;
+        border-radius: 25px;
+
+        background: url('../../assets/img/Library.png');
+        background-size: cover;
+        background-repeat: none;
+        box-shadow: 30px 20px 0px rgba(2, 2, 2, 100);
     }
 
     /* Right Side */
@@ -133,6 +165,14 @@
     .left-side p.description
     {
         width: 25em;
+    }
+    .left-side .button-left a
+    {
+        border-radius: 0px!important;
+        width: 15em;
+
+        color: white;
+        background: #222222;
     }
     /* Card */
     .card 

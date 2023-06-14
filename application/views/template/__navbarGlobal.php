@@ -1,7 +1,7 @@
 <section class="header">
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text">GBookin</span></a>
+            <a class="navbar-brand" href="Home"><span class="navbar-text" id="navbar-text"><h2>GBookin</h2></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -11,10 +11,10 @@
                         <a class="nav-link <?= ($this->router->fetch_class() == 'Home' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Home"><span class="navbar-text" id="navbar-text">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= ($this->router->fetch_class() == 'Books' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="#"><span class="navbar-text" id="navbar-text">Books</span></a>
+                        <a class="nav-link <?= ($this->router->fetch_class() == 'Books' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Books"><span class="navbar-text" id="navbar-text">Books</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= ($this->router->fetch_class() == 'Wishlist' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="#"><span class="navbar-text" id="navbar-text">Wishlist</span></a>
+                        <a class="nav-link <?= ($this->router->fetch_class() == 'Wishlist' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Wishlist"><span class="navbar-text" id="navbar-text">Wishlist</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= ($this->router->fetch_class() == 'About' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="AboutUs" ><span class="navbar-text" id="navbar-text">About Us</span></a>
