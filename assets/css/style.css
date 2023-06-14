@@ -15,6 +15,19 @@ section.header
     margin: 10px 0px;
     padding: 5px 0px;
 }
+section.header .navbar
+{
+    transition: background-color 0.3s ease; 
+}
+section.header .navbar.scrolled 
+{
+    background-color: #222222;
+    border-bottom: 5px solid white;
+}
+.navbar.scrolled .navbar-text
+{
+    color: white!important;
+}
 section.header ul li
 {
     margin: 0px 20px;

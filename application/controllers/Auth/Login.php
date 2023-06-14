@@ -5,6 +5,7 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('auth/login');
+        $data['title'] = 'GBookIn - Login';
+		$this->load->view('auth/login', $data);
 	}
 }

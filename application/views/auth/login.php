@@ -30,7 +30,7 @@
                         <div class="container-fluid" style="width: 100vh;">
                             <div class="body-text d-flex flex-column">
                                 <div class="title-page">
-                                    <h1>GBookIn</h1>
+                                    <a href="Home" class="title"><h1>GBookIn</h1></a>
                                 </div>
                                 <div class="content-page">
                                     <form action="" method="post">
