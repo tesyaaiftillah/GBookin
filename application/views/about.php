@@ -68,7 +68,7 @@
                     </div>
                     <div class="right-side col-5">
                         <div class="img">
-                            <img src="../../assets/img/booksshelf.png" alt="Bookshelf">
+                            <img src="../../asset/img/booksshelf.png" alt="Bookshelf">
                         </div>
                         <div class="card-right">
                             <h1 class="text-light text-wrap-open">“</h1>
@@ -89,18 +89,21 @@
                         <div class="img"></div>
                     </div>
                     <div class="right-side col-lg-6">
-                        <div class="flex-column">
+                        <div class="flex-column align-items-center">
                             <div class="text-description">
                                 <h3 class="fw-bold">You can participate in importing knowledge</h3>
                                 <p>Have a scientific work or book that has not been registered in bausastra ? You can share it here</p>
                             </div>
-                            <button class="donate-book">
+                            <div class="donate-book">
                                 <a href="" class="btn btn-sm">Donating Book</a>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="about-4 mt-5 pt-5 mb-3 pb-3">
+            
         </section>
     </section>
 <!----------------->
@@ -117,7 +120,7 @@
         width: 30em;
         border-radius: 25px;
 
-        background: url('../../assets/img/Library.png');
+        background: url('../../asset/img/Library.png');
         background-size: cover;
         background-repeat: none;
         box-shadow: 30px 20px 0px rgba(2, 2, 2, 100);
@@ -160,7 +163,12 @@
         margin-top: -70px;
         margin-right: 95px;
     }
-
+    .right-side .donate-book a
+    {
+        padding: 10px 35px;
+        color: white;
+        background-color: #222222;
+    }
     /* Left Side */
     .left-side p.description
     {

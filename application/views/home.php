@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <div class="section-4 mt-5 pt-5 mb-3 pb-3">
+        <section class="beranda-4 mt-5 pt-5 mb-3 pb-3">
             <div class="container">
                 <div class="d-flex flex-row">
                     <div class="left-side d-flex align-items-center">
@@ -128,11 +128,11 @@
                         </div>
                     </div>
                     <div class="right-side">
-                        <img src="../../assets/img/Book.png" alt="Book" width="650">
+                        <img src="../../asset/img/Book.png" alt="Book" width="650">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 <!----------------->
 
@@ -171,7 +171,7 @@
     {
         width: 40em;
         height: 40.1em;
-        background:url('../../assets/img/BookFairSection.png');
+        background:url('../../asset/img/BookFairSection.png');
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -204,11 +204,5 @@
 
         color: black;
         background-color: white;
-    }
-    .button-news a
-    {
-        margin-top: 25px;
-        border: 1px solid black;
-        width: 25em;
     }
 </style>
