@@ -30,7 +30,7 @@
                         <div class="container-fluid" style="width: 100vh;">
                             <div class="body-text d-flex flex-column">
                                 <div class="title-page mt-3 pt-3 ms-5">
-                                    <a href="Home" class="title fw-bold" style="color: black; text-decoration:none;"><h1>Bausastra</h1></a>
+                                    <a href="Home" class="title fw-bold" style="color: black; text-decoration:none;"><h1>Gbookin</h1></a>
                                 </div>
                                 <div class="content-page ms-5">
                                     <div class="container">
