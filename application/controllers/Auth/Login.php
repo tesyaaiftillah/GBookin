@@ -11,17 +11,6 @@ class Login extends CI_Controller {
 
 	function index()
 	{
-		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required');
-
-		if($this->form_validation->run() == FALSE)
-		{
-			$data['title'] = 'GBookIn - Login';
-			$this->load->view('auth/login', $data);
-		}
-		else
-		{
-			$this->_login();
-		}
+		$this->load->view('auth/login');
 	}
 }

@@ -68,7 +68,7 @@
                     </div>
                     <div class="right-side col-5">
                         <div class="img">
-                            <img src="../../asset/img/booksshelf.png" alt="Bookshelf">
+                            <img src="assets/img/booksshelf.png" alt="Bookshelf">
                         </div>
                         <div class="card-right">
                             <h1 class="text-light text-wrap-open">“</h1>
@@ -120,7 +120,7 @@
         width: 30em;
         border-radius: 25px;
 
-        background: url('../../asset/img/Library.png');
+        background: url('assets/img/Library.png');
         background-size: cover;
         background-repeat: none;
         box-shadow: 30px 20px 0px rgba(2, 2, 2, 100);

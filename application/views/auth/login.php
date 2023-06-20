@@ -8,9 +8,9 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-            <link rel="stylesheet" href="../../asset/css/auth.css">
+            <link rel="stylesheet" href="assets/css/auth.css">
             <!-- Script JS -->
-            <script src="../../asset/js/slider.js"></script>
+            <script src="assets/js/slider.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
                 <div class="d-flex flex-row">
                     <div class="left-side">
                         <div class="container-fluid left-img" style="background-color: #222222;width: 41em;height:100vh;">
-                            <div class="image"></div>
+                            <img src="assets/img/authImg.png" alt="img-auth" style="margin-left:-12px;width: 41em;height:100vh;">
                         </div>
                     </div>
                     <div class="right-side">
@@ -65,7 +65,7 @@
                                         </form>
                                         <div class="footer-page d-flex flex-row mt-5 pt-5">
                                             <p>Don't Have an account ?</p>
-                                            <a href="Register" class="ms-2 fw-bold" style="color:black;text-decoration:none;">Sign Up</a>
+                                            <a href="register" class="ms-2 fw-bold" style="color:black;text-decoration:none;">Sign Up</a>
                                         </div>
                                     </div>
                                 </div>
