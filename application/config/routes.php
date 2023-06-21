@@ -59,5 +59,8 @@ $route['Register|register'] = 'Auth/Register';
 // Route Nav
 $route['default_controller'] = 'home';
 $route['Books|books'] = 'books';
-$route['wishlist|Wishlist'] = 'wishlist';
+$route['Collection|collection'] = 'collection';
 $route['About|about'] = 'about';
+
+// Dropdown
+$route['Account|account'] = 'account';

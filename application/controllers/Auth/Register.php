@@ -18,23 +18,24 @@ class Register extends CI_Controller {
 
 		if ($this->form_validation->run() === false)
         {
-            $data['title'] = 'Ruventra - Daftar Akun';
-            $this->load->view('auth/register', $data);
+            $data['title'] = 'GBookin - Register Account';
+            $this->load->view('template/__headAuth', $data);
+            $this->load->view('auth/register');
         }
         else
         {
-            $data = array
-            (
+            $currentTime = date('Y-m-d H:i:s');
+            $data = 
+            [
                 'username' => htmlspecialchars ($this->input->post('username', true)),
                 'email' => htmlspecialchars ($this->input->post('email', true)),
                 'password' => password_hash ($this->input->post('password'), PASSWORD_DEFAULT),
-                'created_at' => time()
-            ); 
-            $this->Auth->Register($data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
-            Sukses Membuat Akun.
-            </div>');
-            redirect('Auth/Login');
+                'created_at'=>$currentTime,
+            ]; 
+            $this->Auth->RegisterData($data);
+            $this->session->set_flashdata('message', '<div class="flashMessage fw-bold">
+            Account Created! please Login</div>');
+            redirect('Login');
         }
 	}
 

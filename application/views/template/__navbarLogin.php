@@ -36,8 +36,13 @@
                     <li class="nav-item mt-2" style="margin: 0px -10px;">
                         <a class="nav-link"><span class="navbar-text" id="navbar-text">|</span></a>
                     </li>
-                    <li class="nav-item mt-2">
-                        <a class="nav-link" href="Login"><span class="navbar-text" id="navbar-text">Login</span></a>
+                    <li class="nav-item dropdown mt-2">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="navbar-text" id="navbar-text"><?= $user['username']?></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Collection</a></li>
+                            <li><a class="dropdown-item" href="Account">Account</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('Auth/Logout');?>">Log Out</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
