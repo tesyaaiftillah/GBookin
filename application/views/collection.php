@@ -3,7 +3,7 @@
         <div class="d-flex flex-row">
             <aside class="flex-column">
                 <div class="head-text">
-                    <h5 class="fw-bold">Wishlist</h5>
+                    <h5 class="fw-bold">Collection</h5>
                 </div>
                 <div class="filter-card mt-3">
                     <div class="filter-card-head">
@@ -30,7 +30,7 @@
                 </div>
             </aside>
             <div class="flex-column">
-                <div class="text-count">
+                <div class="text-count ms-5">
                     <p>5 Books</p>
                 </div>
                 <div class="wishlist d-flex flex-wrap">

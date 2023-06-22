@@ -23,7 +23,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost:8080';
+=======
+$config['base_url'] = 'http://localhost/GBookin/';
+>>>>>>> 8f6b35dca7daab3a6d833aed0aefd35ecc8e4daf
 
 /*
 |--------------------------------------------------------------------------

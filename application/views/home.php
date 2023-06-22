@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="right-side">
-                        <img src="../../asset/img/Book.png" alt="Book" width="650">
+                        <img src="assets/img/Book.png" alt="Book" width="650">
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
     {
         width: 40em;
         height: 40.1em;
-        background:url('../../asset/img/BookFairSection.png');
+        background:url('assets/img/BookFairSection.png');
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;

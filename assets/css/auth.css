@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-section.auth .left-side .left-img
-{
-    background-image: url('../../asset/img/authImg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Right Side */
 
 .content-page

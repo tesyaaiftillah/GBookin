@@ -14,10 +14,10 @@
                         <a class="nav-link <?= ($this->router->fetch_class() == 'Books' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Books"><span class="navbar-text" id="navbar-text">Books</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= ($this->router->fetch_class() == 'Wishlist' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Wishlist"><span class="navbar-text" id="navbar-text">Wishlist</span></a>
+                        <a class="nav-link <?= ($this->router->fetch_class() == 'Collection' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="Collection"><span class="navbar-text" id="navbar-text">Collection</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= ($this->router->fetch_class() == 'About' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="AboutUs" ><span class="navbar-text" id="navbar-text">About Us</span></a>
+                        <a class="nav-link <?= ($this->router->fetch_class() == 'AboutUs' && $this->router->fetch_method() == 'index') ? 'active' : ''; ?>" href="AboutUs" ><span class="navbar-text" id="navbar-text">About Us</span></a>
                     </li>
                     <li class="nav-item login">
                         <a class="nav-link" href="Login" >Login</a>
