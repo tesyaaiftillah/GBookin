@@ -8,7 +8,7 @@ class Categories extends CI_Model
     //menampilkan data buku berdasarkan id
     public function getById($id)
     {
-        return $this->db->get_where($this->table, ["categories_id" => $id])->row();
+        return $this->db->get_where($this->table, ["category_id" => $id])->row();
         //query diatas seperti halnya query pada mysql 
         //select * from mahasiswa where categories_id='$id'
     }
@@ -17,7 +17,7 @@ class Categories extends CI_Model
     public function getAll()
     {
         $this->db->from($this->table);
-        $this->db->order_by("categories_id", "desc");
+        $this->db->order_by("category_id", "desc");
         $query = $this->db->get();
         return $query->result();
         //fungsi diatas seperti halnya query 
@@ -28,12 +28,9 @@ class Categories extends CI_Model
     public function save()
     {
         $data = array(
-            "Nama" => $this->input->post('Nama'),
-            "JenisKelamin" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "category_id" => $this->input->post('category_id'),
+            "category_name" => $this->input->post('category_name'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s'))
         );
         return $this->db->insert($this->table, $data);
     }
@@ -42,19 +39,16 @@ class Categories extends CI_Model
     public function update()
     {
         $data = array(
-            "Nama" => $this->input->post('Nama'),
-            "JenisKelamin" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "category_id" => $this->input->post('category_id'),
+            "category_name" => $this->input->post('category_name'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s'))
         );
-        return $this->db->update($this->table, $data, array('categories_id' => $this->input->post('categories_id')));
+        return $this->db->update($this->table, $data, array('category_id' => $this->input->post('category_id')));
     }
 
     //hapus data buku
     public function delete($id)
     {
-        return $this->db->delete($this->table, array("categories_id" => $id));
+        return $this->db->delete($this->table, array("category_id" => $id));
     }
 }

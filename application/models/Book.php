@@ -32,6 +32,7 @@ class Book extends CI_Model
             "title" => $this->input->post('title'),
             "author" => $this->input->post('author'),
             "category_id" => $this->input->post('category_id'),
+            "audio_id" => $this->input->post('audio_id'),
             "created_at" => $this->input->post(date('Y-m-d H:i:s')),
         );
         return $this->db->insert($this->table, $data);
@@ -41,12 +42,10 @@ class Book extends CI_Model
     public function update()
     {
         $data = array(
-            "Nama" => $this->input->post('Nama'),
-            "JenisKelamin" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "title" => $this->input->post('title'),
+            "author" => $this->input->post('author'),
+            "category_id" => $this->input->post('category_id'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s')),
         );
         return $this->db->update($this->table, $data, array('book_id' => $this->input->post('book_id')));
     }
@@ -62,16 +61,16 @@ class Book extends CI_Model
     //menampilkan data buku berdasarkan id
     public function getById_audio($id)
     {
-        return $this->db->get_where($this->table, ["book_id" => $id])->row();
+        return $this->db->get_where($this->tableAudio, ["audio_id" => $id])->row();
         //query diatas seperti halnya query pada mysql 
         //select * from mahasiswa where book_id='$id'
     }
 
-    //menampilkan semua data buku
+    //menampilkan semua data audio buku
     public function getAll_audio()
     {
-        $this->db->from($this->table);
-        $this->db->order_by("book_id", "desc");
+        $this->db->from($this->tableAudio);
+        $this->db->order_by("audio_id");
         $query = $this->db->get();
         return $query->result();
         //fungsi diatas seperti halnya query 
@@ -82,33 +81,28 @@ class Book extends CI_Model
     public function save_audio()
     {
         $data = array(
-            "judul_buku" => $this->input->post('Nama'),
-            "author" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "audio_id" => $this->input->post("audio_id"),
+            "file" => $this->input->post('file'),
+            "category_id" => $this->input->post('category_id'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s')),
         );
-        return $this->db->insert($this->table, $data);
+        return $this->db->insert($this->tableAudio, $data);
     }
 
-    //edit data buku
+    //edit data audio buku
     public function update_audio()
     {
         $data = array(
-            "Nama" => $this->input->post('Nama'),
-            "JenisKelamin" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "file" => $this->input->post('file'),
+            "category_id" => $this->input->post('category_id'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s')),
         );
-        return $this->db->update($this->table, $data, array('book_id' => $this->input->post('book_id')));
+        return $this->db->update($this->tableAudio, $data, array('audio_id' => $this->input->post('audio_id')));
     }
 
-    //hapus data buku
+    //hapus data audio buku
     public function delete_audip($id)
     {
-        return $this->db->delete($this->table, array("book_id" => $id));
+        return $this->db->delete($this->tableAudio, array("audio_id" => $id));
     }
 }
