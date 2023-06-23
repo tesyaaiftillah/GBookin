@@ -12,9 +12,8 @@ class Account extends CI_Controller {
 	public function index()
 	{
         $data['title'] = 'Bausastra - Account Setting';
-        $data['user'] = $this->Auth->Session();
+        
 		$this->load->view('template/__headGlobal', $data);
-		$this->load->view('template/__navbarLogin', $data);
 		$this->load->view('account');
 		$this->load->view('template/__footerGlobal');
 	}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-body
+*
 {
     font-family: 'Quicksand', sans-serif;
 }
@@ -46,6 +46,8 @@ section.header form input:focus
 {
     outline: none;
 }
+
+
 
 @media screen and (max-width: 767px) {
     section.header ul li.login
