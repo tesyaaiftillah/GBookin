@@ -18,7 +18,7 @@ class Book extends CI_Model
     public function getAll()
     {
         $this->db->from($this->table);
-        $this->db->order_by("book_id", "desc");
+        $this->db->order_by("book_id");
         $query = $this->db->get();
         return $query->result();
         //fungsi diatas seperti halnya query 
@@ -29,12 +29,10 @@ class Book extends CI_Model
     public function save()
     {
         $data = array(
-            "judul_buku" => $this->input->post('Nama'),
-            "author" => $this->input->post('JenisKelamin'),
-            "Alamat" => $this->input->post('Alamat'),
-            "Agama" => $this->input->post('Agama'),
-            "NoHp" => $this->input->post('NoHp'),
-            "Email" => $this->input->post('Email')
+            "title" => $this->input->post('title'),
+            "author" => $this->input->post('author'),
+            "category_id" => $this->input->post('category_id'),
+            "created_at" => $this->input->post(date('Y-m-d H:i:s')),
         );
         return $this->db->insert($this->table, $data);
     }

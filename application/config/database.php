@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql309.infinityfree.com',
-	'username' => 'if0_34479376',
-	'password' => 'EdchT8N7K068K2M',
-	'database' => 'if0_34479376_GBookIn',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'gbookin',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

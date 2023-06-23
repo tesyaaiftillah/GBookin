@@ -7,7 +7,7 @@ class Book extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("bsook"); //load model buku
+        $this->load->model("Book"); //load model buku
     }
 
     public function index()
