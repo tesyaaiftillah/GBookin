@@ -62,12 +62,30 @@ $route['Books|books'] = 'books';
 $route['Collection|collection'] = 'collection';
 $route['About|about'] = 'about';
 
-//route book and details
-$route['Book|book'] = 'Book';
-$route['Detail|detail'] = 'Details';
+// Routes for Membership Controller
+$route['membership'] = 'membership/index';
+$route['membership/create'] = 'membership/create';
+$route['membership/edit/(:num)'] = 'membership/edit/$1';
+$route['membership/delete/(:num)'] = 'membership/delete/$1';
 
-//transaction route
-$route['transaction|Transaction'] = 'Transaction';
+// Routes for Book Controller
+$route['book'] = 'book/index';
+$route['book/create'] = 'book/create';
+$route['book/edit/(:num)'] = 'book/edit/$1';
+$route['book/delete/(:num)'] = 'book/delete/$1';
+
+// Routes for AudioContent Controller
+$route['audio_content'] = 'audiocontent/index';
+$route['audio_content/create'] = 'audiocontent/create';
+$route['audio_content/edit/(:num)'] = 'audiocontent/edit/$1';
+$route['audio_content/delete/(:num)'] = 'audiocontent/delete/$1';
+
+// Routes for Categories Controller
+$route['categories'] = 'categories/index';
+$route['categories/create'] = 'categories/create';
+$route['categories/edit/(:num)'] = 'categories/edit/$1';
+$route['categories/delete/(:num)'] = 'categories/delete/$1';
+
 
 // Dropdown
 $route['Account|account'] = 'account';
