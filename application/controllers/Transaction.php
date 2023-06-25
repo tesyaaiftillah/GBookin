@@ -1,6 +1,7 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Transaction extends CI_Controller {
+class Transaction extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,45 +21,47 @@ class Transaction extends CI_Controller {
 
 
 	public function __construct()
-    {
-        parent::__construct();
-        $params = array('server_key' => 'your_server_key', 'production' => false);
+	{
+		parent::__construct();
+		$params = array('server_key' => 'your_server_key', 'production' => false);
 		$this->load->library('veritrans');
 		$this->veritrans->config($params);
 		$this->load->helper('url');
-		
-    }
 
-    public function index()
-    {
-    	$this->load->view('transaction');
-    }
+		$this->load->model('Transaction_model');
+		$this->load->model('Payment_model');
+		$this->load->model('User_model');
+	}
 
-    public function process()
-    {
-    	$order_id = $this->input->post('order_id');
-    	$action = $this->input->post('action');
-    	switch ($action) {
-		    case 'status':
-		        $this->status($order_id);
-		        break;
-		    case 'approve':
-		        $this->approve($order_id);
-		        break;
-		    case 'expire':
-		        $this->expire($order_id);
-		        break;
-		   	case 'cancel':
-		        $this->cancel($order_id);
-		        break;
+	public function index()
+	{
+		$this->load->view('transaction');
+	}
+
+	public function process()
+	{
+		$order_id = $this->input->post('order_id');
+		$action = $this->input->post('action');
+		switch ($action) {
+			case 'status':
+				$this->status($order_id);
+				break;
+			case 'approve':
+				$this->approve($order_id);
+				break;
+			case 'expire':
+				$this->expire($order_id);
+				break;
+			case 'cancel':
+				$this->cancel($order_id);
+				break;
 		}
-
-    }
+	}
 
 	public function status($order_id)
 	{
 		echo 'test get status </br>';
-		print_r ($this->veritrans->status($order_id) );
+		print_r($this->veritrans->status($order_id));
 	}
 
 	public function cancel($order_id)
@@ -70,12 +73,54 @@ class Transaction extends CI_Controller {
 	public function approve($order_id)
 	{
 		echo 'test get approve </br>';
-		print_r ($this->veritrans->approve($order_id) );
+		print_r($this->veritrans->approve($order_id));
 	}
 
 	public function expire($order_id)
 	{
 		echo 'test get expire </br>';
-		print_r ($this->veritrans->expire($order_id) );
+		print_r($this->veritrans->expire($order_id));
 	}
+
+
+	public function processTransaction()
+    {
+        // Example data
+        $userId = 1;
+        $amount = 100;
+
+        // Start the database transaction
+        $this->db->trans_start();
+
+        try {
+            // Perform the transaction
+            $transactionId = $this->Transaction_model->createTransaction($userId, $amount);
+
+            // Create a payment record
+            $paymentData = array(
+                'user_id' => $userId,
+                'transaction_id' => $transactionId,
+                'payment_method' => 'Credit Card',
+                'status' => 'Paid',
+            );
+            $this->Payment_model->createPayment($paymentData);
+
+            // Update user's membership or perform any other necessary actions
+            $this->User_model->updateMembership($userId, 'Gold');
+
+            // Commit the transaction
+            $this->db->trans_commit();
+
+            // Transaction process successful
+            echo 'Transaction process completed successfully.';
+        } catch (Exception $e) {
+            // Something went wrong, rollback the transaction
+            $this->db->trans_rollback();
+
+            // Handle the error
+            echo 'Transaction process failed. Error: ' . $e->getMessage();
+        }
+    }
+
+}
 }

@@ -62,5 +62,12 @@ $route['Books|books'] = 'books';
 $route['Collection|collection'] = 'collection';
 $route['About|about'] = 'about';
 
+//route book and details
+$route['Book|book'] = 'Book';
+$route['Detail|detail'] = 'Details';
+
+//transaction route
+$route['transaction|Transaction'] = 'Transaction';
+
 // Dropdown
 $route['Account|account'] = 'account';
